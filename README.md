@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Desenvolvimento de Produtos de Software
 
-First, run the development server:
+Desafio da matéria é:
+
+- desenvolva o DER em duplas para automatizar o contexto anterior. Considere que é necessário que você crie um cadastro dos logins para esse sistema com os campos (login , senha, nome, cpf).
+
+
+## Licença 📃
+
+![MIT](https://img.shields.io/badge/License-MIT-green)
+
+## Create new project
+
+Install my-project with npm
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  npx create-next-app@latest my app
+  cd my-app
 ```
+Install node_modules
+```bash
+  npm Install
+```
+Start project
+```bash
+  npm run dev
+```
+    
+## Professor
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ - [Marco Moreira](mailto:marcomoreira@uniaraxa.edu.br)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Aluno
 
-To learn more about Next.js, take a look at the following resources:
+- Nome: Jeison Espindola Tomio
+- Matrícula: 045882
+- Curso: Desenvolvimento de Produtos de Software I
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+**Nextjs 13:** Diretório App | Roteamento | Layouts | Pages | API Routes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**React 18:** Server | Client Components
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Data Base:** Prisma | Mongodb
+
+**Components:** Shadcn/ui | Radix/ui | Tailwindcss | Eslint
+
+**Authentication:** NextAuth.js | Authjs (páginas personalizadas)
