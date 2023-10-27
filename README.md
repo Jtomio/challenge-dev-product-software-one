@@ -51,3 +51,6 @@ Start project
 **Components:** Shadcn/ui | Radix/ui | Tailwindcss | Eslint
 
 **Authentication:** NextAuth.js | Authjs (páginas personalizadas)
+
+
+Mu6DBGOuysswMWHu
