@@ -53,4 +53,4 @@ Start project
 **Authentication:** NextAuth.js | Authjs (páginas personalizadas)
 
 
-Mu6DBGOuysswMWHu
+zCnw8w5E9NnGexQ9
