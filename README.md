@@ -3,7 +3,7 @@
 
 Desafio da matéria é:
 
-- desenvolva o DER em duplas para automatizar o contexto anterior. Considere que é necessário que você crie um cadastro dos logins para esse sistema com os campos (login , senha, nome, cpf).
+- Considere que é necessário que você crie um cadastro dos logins para esse sistema com os campos (login , senha, nome, cpf).
 
 
 ## Licença 📃
@@ -32,13 +32,10 @@ Start project
  - [Marco Moreira](mailto:marcomoreira@uniaraxa.edu.br)
 
 
-
 ## Aluno
 
 - Nome: Jeison Espindola Tomio
-- Matrícula: 045882
 - Curso: Desenvolvimento de Produtos de Software I
-
 
 ## Tech Stack
 
@@ -53,14 +50,11 @@ Start project
 **Authentication:** NextAuth.js | Authjs (páginas personalizadas)
 
 
-
-
 ## Schema do DB User
 
 <p align="center">
   <img src="./src/assets/img-schema.png" alt="Descrição da imagem">
 </p>
-
 
 
 ## Deploy
@@ -70,7 +64,3 @@ Start project
 <p align="center">
   <img src="./src/assets/img-preview.png" alt="Descrição da imagem">
 </p>
-
-
-
-
