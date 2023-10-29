@@ -3,10 +3,19 @@ import { NextResponse } from 'next/server'
 import { hash } from 'bcrypt'
 import { z } from 'zod'
 
-// Define o schema para validação do input
+// Define o schema para validação do input do cadastro
 const userSchema = z.object({
   username: z.string().min(1, 'Nome é obrigatório!').max(100),
   email: z.string().min(1, 'E-mail é obrigatório!').email('E-mail inválido.'),
+  cpf: z
+    .string()
+    .min(1, 'Cpf é obrigatório!')
+    .min(11, 'Digite apenas os números')
+    .max(11)
+    .refine((cpf) => {
+      const numberRegex = /^[0-9]+$/
+      return numberRegex.test(cpf)
+    }, 'O CPF deve conter apenas números'),
   password: z
     .string()
     .min(1, 'Senha obrigatória!')
@@ -16,7 +25,7 @@ const userSchema = z.object({
 export async function POST(req: Request) {
   try {
     const body = await req.json()
-    const { email, username, password } = userSchema.parse(body)
+    const { email, username, cpf, password } = userSchema.parse(body)
 
     // verifica se o e-mail já existe
 
@@ -25,7 +34,10 @@ export async function POST(req: Request) {
     })
     if (existingUserByEmail) {
       return NextResponse.json(
-        { user: null, message: 'E-mail já cadastrado.' },
+        {
+          user: null,
+          message: 'E-mail já cadastrado. Faça o login na sua conta',
+        },
         { status: 409 },
       )
     }
@@ -36,7 +48,17 @@ export async function POST(req: Request) {
     })
     if (existingUserByUsername) {
       return NextResponse.json(
-        { user: null, message: 'Usuário já existe.' },
+        { user: null, message: 'Usuário já existe. Faça o login na sua conta' },
+        { status: 409 },
+      )
+    }
+    // verifica se o cpf já existe
+    const existingUserByUserCpf = await db.user.findUnique({
+      where: { cpf },
+    })
+    if (existingUserByUserCpf) {
+      return NextResponse.json(
+        { user: null, message: 'CPF já existe. Faça o login na sua conta' },
         { status: 409 },
       )
     }
@@ -46,6 +68,7 @@ export async function POST(req: Request) {
       data: {
         username,
         email,
+        cpf,
         password: hashedPassword,
       },
     })

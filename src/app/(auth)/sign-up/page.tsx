@@ -1,11 +1,10 @@
-import SignUpForm from '@/components/form/SignUpForm';
+import SignUpForm from '@/components/form/SignUpForm'
+import React from 'react'
 
-const page = () => {
+export default function page() {
   return (
-    <div className='w-full'>
+    <div className="container">
       <SignUpForm />
     </div>
-  );
-};
-
-export default page;
+  )
+}

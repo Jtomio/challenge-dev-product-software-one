@@ -53,4 +53,24 @@ Start project
 **Authentication:** NextAuth.js | Authjs (páginas personalizadas)
 
 
-zCnw8w5E9NnGexQ9
+
+
+## Schema do DB User
+
+<p align="center">
+  <img src="./src/assets/img-schema.png" alt="Descrição da imagem">
+</p>
+
+
+
+## Deploy
+
+- [Preview do Deploy](https://www.google.com)
+
+<p align="center">
+  <img src="./src/assets/img-preview.png" alt="Descrição da imagem">
+</p>
+
+
+
+
