@@ -64,3 +64,4 @@ Start project
 <p align="center">
   <img src="./src/assets/img-preview.png" alt="Descrição da imagem">
 </p>
+
