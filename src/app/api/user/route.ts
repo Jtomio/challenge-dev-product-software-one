@@ -7,15 +7,7 @@ import { z } from 'zod'
 const userSchema = z.object({
   username: z.string().min(1, 'Nome é obrigatório!').max(100),
   email: z.string().min(1, 'E-mail é obrigatório!').email('E-mail inválido.'),
-  cpf: z
-    .string()
-    .min(1, 'Cpf é obrigatório!')
-    .min(11, 'Digite apenas os números')
-    .max(11)
-    .refine((cpf) => {
-      const numberRegex = /^[0-9]+$/
-      return numberRegex.test(cpf)
-    }, 'O CPF deve conter apenas números'),
+  cpf: z.string().regex(/^([0-9\\-]+)$/, 'Informe um CPF válido.'),
   password: z
     .string()
     .min(1, 'Senha obrigatória!')

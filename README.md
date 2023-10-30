@@ -42,7 +42,7 @@ Start project
 
 **React 18:** Server | Client Components
 
-**Data Base:** Prisma | Mongodb
+**Data Base:** Prisma | Postgres
 
 **Components:** Shadcn/ui | Radix/ui | Tailwindcss | Eslint
 
