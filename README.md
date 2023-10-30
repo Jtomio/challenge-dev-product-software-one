@@ -10,13 +10,12 @@ Desafio da matéria é:
 
 ![MIT](https://img.shields.io/badge/License-MIT-green)
 
-## Create new project
+## Git clone
 
-Install my-project with npm
+Clonar o projeto
 
 ```bash
-  npx create-next-app@latest my app
-  cd my-app
+  git clone https://github.com/Jtomio/challenge-dev-product-software-one.git
 ```
 Install node_modules
 ```bash
@@ -59,7 +58,7 @@ Start project
 
 ## Deploy
 
-- [Preview do Deploy](https://www.google.com)
+- [Acessar Projeto](https://challenge-dev-product-software-one.vercel.app/)
 
 <p align="center">
   <img src="./src/assets/img-preview.png" alt="Descrição da imagem">
