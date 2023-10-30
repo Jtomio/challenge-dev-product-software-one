@@ -6,8 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src --ext ts,tsx,js,jsx,scss --report-unused-disable-directives --max-warnings 0 --fix"
-  },
+    "lint": "eslint src --ext ts,tsx,js,jsx,scss --report-unused-disable-directives --max-warnings 0 --fix",
+    "vercel-build": "prisma generate && prisma migrate deploy && next build",
+    "prisma:generate": "prisma generate"
+  },  
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
     "@next-auth/prisma-adapter": "^1.0.7",
