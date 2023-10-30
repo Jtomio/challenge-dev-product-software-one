@@ -22,7 +22,7 @@ export default async function Navbar() {
             <UserAccountnav />
           ) : (
             <Link href="/sign-in">
-              <Button variant={'outline'}>Entar</Button>
+              <Button variant={'outline'}>Entrar</Button>
             </Link>
           )}
         </div>
